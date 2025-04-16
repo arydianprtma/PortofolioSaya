@@ -468,6 +468,9 @@ section h2::after {
     text-align: justify;
     margin-bottom: 1rem;
     line-height: 1.8;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 /* Perbaikan Skill Bars */
@@ -1758,9 +1761,13 @@ body.menu-open {
     
     /* Atur teks about pada mobile */
     .about-text p {
-        text-align: left; /* Pada mobile lebih baik rata kiri untuk readability */
+        text-align: justify;
         font-size: 0.95rem;
         line-height: 1.7;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        word-break: break-word;
     }
     
     /* Scroll & WhatsApp buttons adjustment for smartphone */
