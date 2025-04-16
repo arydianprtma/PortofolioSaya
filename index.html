@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar" class="modern-nav">
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>Portfolio</span>
+        </div>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <div id="stars" class="stars"></div>
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <div class="typing-text">
+                    <span class="first-text">I'm a </span>
+                    <span class="text sec-text">Developer</span>
+                </div>
+                
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tooltip="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="JavaScript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="NodeJS">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Database">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Bootstrap">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Tailwind CSS">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="tailwind-icon">
+                            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="cv/arydianprtma.pdf" download class="btn btn-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            
+            <div id="globe-container"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="cert/foto.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h3>Full Stack Developer</h3>
+                <p>Halo! Saya Ary Dian Pratama, mahasiswa aktif semester 6 di Universitas Amikom Purwokerto, program studi Informatika. Saya memiliki ketertarikan besar di dunia pengembangan website, terutama dalam membangun sistem yang fungsional, modern, dan user-friendly.</p>
+                <p>Saya senang mengeksplorasi teknologi web, mulai dari frontend hingga backend, dan terbiasa menggunakan tools seperti HTML, CSS (Tailwind), JavaScript, dan PHP Native. Saya percaya bahwa setiap baris kode bukan hanya soal logika, tapi juga tentang menciptakan solusi yang nyata dan berdampak.</p>                
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML & CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line"><span style="width:85%"></span></div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line"><span style="width:80%"></span></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>PHP</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-line"><span style="width:75%"></span></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-line"><span style="width:50%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tambah section baru untuk sertifikat -->
+    <section id="certificates">
+        <h2>My Certificates</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <img src="cert/Dot Sertifikat.jpg" alt="Certificate 1">
+                <div class="cert-content">
+                    <h4>Dot Sertifikat- Kompentensi </h4>
+                    <p>Microsoft  Learning Partner - Universitas Amikom Purwokerto</p>
+                    <span class="cert-date">2024</span>
+                    <a href="cert/Dot Sertifikat.jpg" class="cert-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cert-card">
+                <img src="cert/certifikast RedHat.jpg" alt="RedHat Certificate">
+                <div class="cert-content">
+                    <h4>RedHat Certification - Kompentensi</h4>
+                    <p>Red Hat Academy - Universitas Amikom Purwokerto</p>
+                    <span class="cert-date">2024</span>
+                    <a href="cert/certifikast RedHat.jpg" class="cert-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="cert/english.jpg" alt="RedHat Certificate">
+                <div class="cert-content">
+                    <h4>English Course - Kompentensi</h4>   
+                    <p>Universitas Amikom Purwokerto</p>
+                    <br>
+                    <br>
+                    <span class="cert-date">2024</span>
+                    <a href="cert/english.jpg" class="cert-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        
+        <!-- <div class="project-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">website</button>
+            <button class="filter-btn">UI/UX</button>
+            <button class="filter-btn">Mobile</button>
+        </div> -->
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="work/image.png" alt="Project 1">
+                <div class="card-content">
+                    <h3>MKShopMc</h3>
+                    <p>Sebuah toko Minecraft terpecaya di Indonesia dan Menjual kebutuhan Minecraft.</p>
+                    <br>
+                    <p><strong>NB: MASIH BISA DI KEMBANGKAN</strong></p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JAVASCRIPT</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://arydianprtma.github.io/mkshop_mc/" class="card-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/arydianprtma/mkshop_mc" class="card-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="work/Supermarket.png" alt="Project 2">
+                <div class="card-content">
+                    <h3>Supermarket</h3>
+                    <p>Sebuah website untuk menjual barang-barang di supermarket.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="project-tags">
+                        <span class="project-tag">Laravel 9</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                    <div class="card-links">
+                        <span class="card-link" style="cursor: not-allowed; opacity: 0.6;">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </span>
+                        <span class="card-link" style="cursor: not-allowed; opacity: 0.6;">
+                            <i class="fab fa-github"></i> Source Code
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="project-card">
+                <img src="Berners-Lee wins first Queen Elizabeth Prize for Engineering.jpeg" alt="Project 3">
+                <div class="card-content">
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather application with interactive maps and detailed forecasts.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Weather API</span>
+                        <span class="project-tag">MapBox</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container contact-centered">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h3>Mari Terhubung</h3>
+                    <p>Silakan hubungi saya untuk kolaborasi atau diskusi project.</p>
+                </div>
+                
+                <div class="contact-body">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:arydianprt@gmail.com">arydianprt@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+6282214003125">+62 822 1400 3125</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pangandaran, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-media-container">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/arydianprtma" class="social-link" target="_blank" rel="noopener noreferrer" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arydianprtma/" class="social-link" target="_blank" rel="noopener noreferrer" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/arydiannnprt?igsh=MWhsamd3cHVwdTNodw==" class="social-link" target="_blank" rel="noopener noreferrer" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <p>Saya selalu terbuka untuk diskusi dan kolaborasi baru!</p>
+                    <a href="mailto:arydianprt@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Email Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ary Dian Pratama. All rights reserved.</p>
+            <!-- <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Sitemap</a>
+            </div> -->
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

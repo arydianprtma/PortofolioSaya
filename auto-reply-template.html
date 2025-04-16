@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4f46e5, #818cf8);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            padding: 30px;
+            color: #333;
+        }
+
+        .thank-you {
+            font-size: 20px;
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4f46e5;
+        }
+
+        .footer {
+            background: #f1f5f9;
+            padding: 20px;
+            text-align: center;
+            color: #64748b;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #4f46e5;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Terima Kasih Telah Menghubungi Saya!</h1>
+        </div>
+        
+        <div class="content">
+            <p class="thank-you">Halo {{to_name}},</p>
+            
+            <p>Terima kasih telah menghubungi saya! Pesan Anda telah diterima dan akan saya balas sesegera mungkin.</p>
+            
+            <div class="message">
+                <strong>Detail pesan Anda:</strong><br>
+                <strong>Subjek:</strong> {{subject}}<br>
+                <strong>Pesan:</strong> {{message}}
+            </div>
+            
+            <p>Sementara itu, Anda dapat:</p>
+            <ul>
+                <li>Mengunjungi website portfolio saya untuk informasi lebih lanjut</li>
+                <li>Mengikuti saya di media sosial untuk mendapatkan update</li>
+                <li>Mengunduh CV saya untuk mengetahui lebih banyak tentang pengalaman saya</li>
+            </ul>
+            
+            <div class="social-links">
+                Terhubung dengan saya:
+                <a href="https://github.com/arydianprtma">GitHub</a>
+                <a href="https://www.linkedin.com/in/arydianprtma/">LinkedIn</a>
+                <a href="https://www.instagram.com/arydiannnprt?igsh=MWhsamd3cHVwdTNodw==">Instagram</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Salam hangat,<br>Ary Dian Pratama</p>
+            <p>Ini adalah pesan otomatis.</p>
+        </div>
+    </div>
+</body>
+</html>
