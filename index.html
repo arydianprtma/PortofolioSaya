@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>My Portfolio</title>
+    <title>Ary Dian Pratama | Full Stack Web Developer</title>
+    <meta name="description" content="Portfolio Ary Dian Pratama, Full Stack Web Developer dari Indonesia dengan keahlian HTML, CSS, JavaScript, PHP, dan React.">
+    <meta name="keywords" content="web developer, full stack developer, programmer, front-end, back-end, HTML, CSS, JavaScript, PHP, Tailwind, React">
+    <meta name="author" content="Ary Dian Pratama">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MEASUREMENT_ID');
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arydianprtma.github.io/portfolio/">
+    <meta property="og:title" content="Ary Dian Pratama | Full Stack Web Developer">
+    <meta property="og:description" content="Portfolio Ary Dian Pratama, Full Stack Web Developer dari Indonesia dengan keahlian HTML, CSS, JavaScript, PHP, dan React.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arydianprtma.github.io/portfolio/">
+    <meta property="twitter:title" content="Ary Dian Pratama | Full Stack Web Developer">
+    <meta property="twitter:description" content="Portfolio Ary Dian Pratama, Full Stack Web Developer dari Indonesia dengan keahlian HTML, CSS, JavaScript, PHP, dan React.">
+    
+    <!-- Favicon transparan -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="theme-color" content="#0f172a">
@@ -84,7 +112,7 @@
         <div class="about-content">
             <div class="about-img slide-in-left">
                 <div class="blur-circle"></div>
-                <img src="cert/foto.jpg" alt="Profile Picture">
+                <img src="cert/foto.jpg" alt="Profile Picture" loading="lazy">
             </div>
             <div class="about-text slide-in-right">
                 <h3 class="fade-in delay-1">Full Stack Developer</h3>
@@ -130,7 +158,7 @@
         <h2 class="fade-in">My Certificates</h2>
         <div class="cert-grid">
             <div class="cert-card scale-in delay-1">
-                <img src="cert/Dot Sertifikat.jpg" alt="Certificate 1">
+                <img src="cert/Dot Sertifikat.jpg" alt="Certificate 1" loading="lazy">
                 <div class="cert-content">
                     <h4>Dot Sertifikat- Kompentensi </h4>
                     <p>Microsoft  Learning Partner - Universitas Amikom Purwokerto</p>
@@ -142,7 +170,7 @@
             </div>
             
             <div class="cert-card scale-in delay-2">
-                <img src="cert/certifikast RedHat.jpg" alt="RedHat Certificate">
+                <img src="cert/certifikast RedHat.jpg" alt="RedHat Certificate" loading="lazy">
                 <div class="cert-content">
                     <h4>RedHat Certification - Kompentensi</h4>
                     <p>Red Hat Academy - Universitas Amikom Purwokerto</p>
@@ -154,7 +182,7 @@
             </div>
 
             <div class="cert-card scale-in delay-3">
-                <img src="cert/english.jpg" alt="RedHat Certificate">
+                <img src="cert/english.jpg" alt="English Certificate" loading="lazy">
                 <div class="cert-content">
                     <h4>English Course - Kompentensi</h4>   
                     <p>Universitas Amikom Purwokerto</p>
@@ -181,7 +209,7 @@
         
         <div class="project-grid">
             <div class="project-card scale-in delay-1">
-                <img src="work/image.png" alt="Project 1">
+                <img src="work/image.png" alt="Project 1" loading="lazy">
                 <div class="card-content">
                     <h3>MKShopMc</h3>
                     <p>Sebuah toko Minecraft terpecaya di Indonesia dan Menjual kebutuhan Minecraft.</p>
@@ -204,7 +232,7 @@
             </div>
             
             <div class="project-card scale-in delay-2">
-                <img src="work/Supermarket.png" alt="Project 2">
+                <img src="work/Supermarket.png" alt="Project 2" loading="lazy">
                 <div class="card-content">
                     <h3>Supermarket</h3>
                     <p>Sebuah website untuk menjual barang-barang di supermarket.</p>
@@ -341,5 +369,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
+    <script src="analytics.js"></script>
 </body>
 </html>

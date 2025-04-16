@@ -1853,3 +1853,9 @@ body.menu-open {
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
 .delay-5 { transition-delay: 0.5s; }
+
+/* Lazy Loading Images - diganti dengan atribut loading="lazy" bawaan */
+img {
+    max-width: 100%;
+    height: auto;
+}
