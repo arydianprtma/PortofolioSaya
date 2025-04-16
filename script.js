@@ -53,6 +53,8 @@ function createGlobe() {
 document.addEventListener('DOMContentLoaded', () => {
     createGlobe();
     initTypewriter();
+    createStars();
+    setupMobileMenu();
 });
 
 // Typing animation
@@ -131,10 +133,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    createStars();
-});
+// Mobile Menu Toggle
+function setupMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+        
+        // Close menu when clicking on links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+}
 
 function showNotification(message, type) {
     const notification = document.createElement('div');

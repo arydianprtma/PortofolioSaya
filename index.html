@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#0f172a">
 </head>
 <body>
     <nav id="navbar" class="modern-nav">
         <div class="logo">
             <i class="fas fa-code"></i>
             <span>Portfolio</span>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
         <ul>
             <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
@@ -79,11 +83,12 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-img">
+                <div class="blur-circle"></div>
                 <img src="cert/foto.jpg" alt="Profile Picture">
             </div>
             <div class="about-text">
                 <h3>Full Stack Developer</h3>
-                <p>Halo! Saya Ary Dian Pratama, mahasiswa aktif semester 6 di Universitas Amikom Purwokerto, program studi Informatika. Saya memiliki ketertarikan besar di dunia pengembangan website, terutama dalam membangun sistem yang fungsional, modern, dan user-friendly.</p>
+                <p>Halo! Saya Ary Dian Pratama, Mahasiswa aktif semester 6 di Universitas Amikom Purwokerto, program studi Informatika. Saya memiliki ketertarikan besar di dunia pengembangan website, terutama dalam membangun sistem yang fungsional, modern, dan user-friendly.</p>
                 <p>Saya senang mengeksplorasi teknologi web, mulai dari frontend hingga backend, dan terbiasa menggunakan tools seperti HTML, CSS (Tailwind), JavaScript, dan PHP Native. Saya percaya bahwa setiap baris kode bukan hanya soal logika, tapi juga tentang menciptakan solusi yang nyata dan berdampak.</p>                
                 <div class="skill-bars">
                     <div class="skill-bar">
@@ -325,6 +330,14 @@
     <div class="scroll-top">
         <i class="fas fa-arrow-up"></i>
     </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282214003125" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-text">WhatsApp</span>
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
