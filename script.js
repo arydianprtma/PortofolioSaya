@@ -50,11 +50,38 @@ function createGlobe() {
     animate();
 }
 
+// Scroll animation
+function initScrollAnimation() {
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+    
+    function checkScroll() {
+        animatedElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150; // Jarak elemen mulai terlihat dari dasar viewport
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('visible');
+            } else {
+                // Uncomment line below if you want elements to hide again when scrolled away
+                // element.classList.remove('visible');
+            }
+        });
+    }
+    
+    // Cek posisi elemen saat halaman dimuat
+    checkScroll();
+    
+    // Cek posisi elemen saat scroll
+    window.addEventListener('scroll', checkScroll);
+}
+
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     createGlobe();
     initTypewriter();
     createStars();
     setupMobileMenu();
+    initScrollAnimation();
 });
 
 // Typing animation
