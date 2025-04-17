@@ -2116,3 +2116,21 @@ img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     animation: pulse 2s infinite;
 }
+
+/* Style untuk note di card-content (project) */
+.card-content .note {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    background: rgba(79, 70, 229, 0.2);
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-left: 3px solid var(--accent-color);
+}
+
+.project-card:hover .note {
+    background: rgba(79, 70, 229, 0.25);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
